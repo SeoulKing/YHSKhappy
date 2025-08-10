@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤하 서경 생일 파티 초대장</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-bg">
+        <div class="container">
+            <!-- 커버 섹션 -->
+            <section class="cover-section">
+                <div class="cover-image">
+                    <img src="cover-photo.jpg" alt="윤하 서경 생일 파티" id="coverImg">
+                    <div class="cover-overlay">
+                        <div class="glass-card">
+                            <div class="eyebrow">BIRTHDAY INVITATION</div>
+                            <h1 class="main-title">윤하 서경</h1>
+                            <h2 class="subtitle">생일 파티</h2>
+                            <div class="date-info">
+                                <span class="date">2025.08.24 (일)</span>
+                                <span class="time">오후 12시</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 날짜 섹션 (캘린더 카드) -->
+            <section class="section">
+                <h3 class="section-title">DATE</h3>
+                <div class="calendar-card">
+                    <div class="calendar-month">AUGUST 2025</div>
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-meta">SUN • 12:00 PM</div>
+                </div>
+            </section>
+
+            <!-- 장소 섹션 -->
+            <section class="section">
+                <h3 class="section-title">LOCATION</h3>
+                <div class="info-card location-card">
+                    <div class="location-lines">
+                        <p class="location-name">장소: 추후 공지</p>
+                        <p class="location-addr">자세한 주소와 지도가 곧 안내됩니다.</p>
+                    </div>
+                    <div class="map-actions">
+                        <button class="map-btn" disabled>네이버지도</button>
+                        <button class="map-btn" disabled>카카오맵</button>
+                        <a class="map-btn disabled" aria-disabled="true">Google Maps</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 갤러리 섹션 -->
+            <section class="section">
+                <h3 class="section-title">GALLERY</h3>
+                <div class="gallery-grid">
+                    <img src="gallery/1.jpg" alt="gallery" onerror="this.style.display='none'">
+                    <img src="gallery/2.jpg" alt="gallery" onerror="this.style.display='none'">
+                    <img src="gallery/3.jpg" alt="gallery" onerror="this.style.display='none'">
+                    <img src="gallery/4.jpg" alt="gallery" onerror="this.style.display='none'">
+                </div>
+            </section>
+
+            <!-- 메시지 섹션 -->
+            <section class="messages-section section">
+                <h3 class="section-title">GUEST BOOK</h3>
+                <div class="message-form">
+                    <input type="text" id="messageInput" placeholder="축하 메시지를 남겨주세요">
+                    <button onclick="addMessage()">전송</button>
+                </div>
+                <div class="messages-list" id="messagesList"></div>
+            </section>
+
+            <!-- 푸터 -->
+            <footer class="footer">
+                <p class="footer-title">윤하 서경 생일 파티</p>
+                <p>2025년 8월 24일</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
